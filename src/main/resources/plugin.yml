@@ -1,0 +1,40 @@
+name: EcoBoard
+version: 1.0
+main: id.ecoboard.EcoBoard
+api-version: '1.13'
+description: Money + stats sidebar leaderboard dan /pay yang bisa ke player offline
+commands:
+  pay:
+    description: Kirim uang ke player (online/offline)
+    usage: /pay <player> <amount>
+  balance:
+    aliases: [bal, money]
+    description: Lihat saldo
+    usage: /balance [player]
+  baltop:
+    description: Top 10 saldo
+    usage: /baltop
+  setmoney:
+    description: Set saldo player
+    usage: /setmoney <player> <amount>
+    permission: ecoboard.admin
+  addmoney:
+    description: Tambah saldo player
+    usage: /addmoney <player> <amount>
+    permission: ecoboard.admin
+  takemoney:
+    description: Kurangi saldo player
+    usage: /takemoney <player> <amount>
+    permission: ecoboard.admin
+  setstat:
+    description: Set stat player
+    usage: /setstat <player> <mobkills|kills|deaths|playtime> <value>
+    permission: ecoboard.admin
+  resetstats:
+    description: Reset semua stat player ke 0
+    usage: /resetstats <player>
+    permission: ecoboard.admin
+permissions:
+  ecoboard.admin:
+    description: Akses command admin EcoBoard
+    default: op

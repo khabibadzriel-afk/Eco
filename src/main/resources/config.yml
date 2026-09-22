@@ -1,0 +1,26 @@
+# Resource pack untuk ikon pixel ($ ★ pedang tengkorak jam).
+# Upload EcoBoard-ResourcePack.zip ke hosting (GitHub Release, Dropbox dl=1, dll),
+# lalu isi url dan sha1 di bawah. Kosongkan url kalau pack sudah kamu pasang lewat server.properties.
+resource-pack:
+  url: ""
+  sha1: "284f60b950d65a0c89cfc2a53b13ffb378fcbe46"
+
+scoreboard:
+  enabled: true
+  title: "&f%player%"
+  # Lebar minimal judul (jumlah karakter). Judul dipadding spasi supaya box sidebar
+  # lebarnya sama untuk semua player. Naikkan kalau mau box lebih lebar.
+  min-title-length: 12
+  # Placeholder: %money% %mobkills% %kills% %deaths% %playtime%
+  # \uE000 $ | \uE001 bintang | \uE002 pedang | \uE003 tengkorak | \uE004 jam  (dari resource pack)
+  # Warna mendukung &a dan hex &#RRGGBB
+  lines:
+    - "&f\uE000 &a%money%"
+    - "&f\uE001 &d%mobkills%"
+    - "&f\uE002 &c%kills%"
+    - "&f\uE003 &6%deaths%"
+    - "&f\uE004 &e%playtime%"
+
+messages:
+  pay-sent: "&fYou paid %player% &a$ %amount%"
+  pay-received: "&f%player% paid you &a$ %amount%"
